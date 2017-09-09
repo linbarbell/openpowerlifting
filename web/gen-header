@@ -18,7 +18,7 @@ def showdbstats():
 
     num_entries = locale.format('%d', len(csv.rows), grouping=True)
     num_meets = locale.format('%d', len(meets.rows), grouping=True)
-    compiledate = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    compiledate = datetime.datetime.now().strftime("%Y-%m-%d")
 
     print('%s Entries; %s Meets; Updated %s' % (num_entries, num_meets, compiledate))
 
